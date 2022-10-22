@@ -1,0 +1,64 @@
+.WeatherApp form {
+    margin-bottom: 20px;
+  }
+  
+  
+  form .SearchButton,
+  form .CurrentButton  {
+    width: 100px;
+  }
+   
+  
+  .AboutWeather h1 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  
+  .AboutWeather ul {
+   margin: 0;
+   padding: 0;
+  }
+  
+  .AboutWeather li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  .tempfix img {
+    width: 85px;
+    height: auto;
+    position: relative;
+    top: -19px;
+  }
+  
+  .tempfix b {
+    font-size: 64px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  
+   .units {
+    margin-left: 10px;
+      position: relative;
+      top: -34px;
+  }
+  .units a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .units a:hover,
+  .units a:focus {
+    color : black;
+    font-size: 20px;
+    
+  }
+  
+  .WeatherForecast ul {
+    position: relative;
+    top: 39px;
+  }
+  
