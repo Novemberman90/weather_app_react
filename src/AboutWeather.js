@@ -1,5 +1,6 @@
 import React from "react"
 import FormateDate from "./FormateDate";
+import WeatherImg from "./WeatherImg"
 
 export default function AboutWeather(props){
     return (
@@ -19,13 +20,17 @@ export default function AboutWeather(props){
                 {/* Temperature and image */}
 
             <div className='tempfix'>
-              <img className='float-left' src={props.data.icon} alt={props.data.description}/>
+                <div className="float-left">
+                    <WeatherImg code = {props.data.icon} alt = {props.data.description}/>
+                
+                
               <b>{Math.round (props.data.temperature)}</b>
                    <span className='units'>
                      <a className='celsius' href="/" >°C</a>
                      <span className='variant-temp'>|</span>
                      <a  className='fahrenheit' href="/">°F</a>
                   </span>
+                  </div>
             </div>
           </div>
 

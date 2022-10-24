@@ -27,11 +27,10 @@
     line-height: 20px;
   }
   
-  .tempfix img {
-    width: 85px;
-    height: auto;
-    position: relative;
-    top: -19px;
+  .tempfix canvas {
+    margin-right: 5px;
+    margin-top: 5px;
+    display: inline-block
   }
   
   .tempfix b {
