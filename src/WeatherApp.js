@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./WeatherApp.css"
 import axios from "axios";
 import AboutWeather from "./AboutWeather";
+import LoaderSpiner from "./LoaderSpiner";
 
 export default function WeatherApp (props){
     const [weatherData, setWeatherData] = useState({loadingReady : false})
@@ -73,7 +74,11 @@ export default function WeatherApp (props){
         
         searchEngien();
             
-             return "Loading..."
+             return (
+                <div className="text-center">
+                <LoaderSpiner />
+                </div>
+             )
     }
 }
    
