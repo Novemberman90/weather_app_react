@@ -3,6 +3,7 @@ import "./WeatherApp.css"
 import axios from "axios";
 import AboutWeather from "./AboutWeather";
 import LoaderSpiner from "./LoaderSpiner";
+import WeatherForecat from "./WeatherForecat"
 
 export default function WeatherApp (props){
     const [weatherData, setWeatherData] = useState({loadingReady : false})
@@ -11,6 +12,7 @@ export default function WeatherApp (props){
         console.log(response.data);
         setWeatherData({
            loadingReady: true, 
+           coord:response.data.coord,
             city: response.data.name,
             date: new Date(response.data.dt * 1000),
             temperature: response.data.main.temp,
@@ -32,7 +34,7 @@ export default function WeatherApp (props){
 
     function searchEngien(){
              const apiKey = "c409940fd7208150de003ea7999c3e64";
-             let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+             let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey} `;
              axios.get(url).then(showWeather); 
         
     }
@@ -66,7 +68,7 @@ export default function WeatherApp (props){
           {/* Weather info */}
 
         <AboutWeather data={weatherData}/>
-
+        <WeatherForecat coord = {weatherData.coord} />
 
      </div>
   );

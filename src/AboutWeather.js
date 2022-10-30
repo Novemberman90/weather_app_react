@@ -24,7 +24,7 @@ export default function AboutWeather(props){
             <div className='tempfix'>
                 <div className="d-flex">
                     <div>
-                    <WeatherImg size={50} code = {props.data.icon} alt = {props.data.description}/>
+                    <WeatherImg size={52} code = {props.data.icon} alt = {props.data.description}/>
                     </div>
 
                     <div>
