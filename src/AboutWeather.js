@@ -31,10 +31,6 @@ export default function AboutWeather(props){
                         <WeatherTemperetureUnit celsius = {props.data.temperature} />
 
                     </div>
-                        
-                    
-
-              
                   </div>
             </div>
           </div>
