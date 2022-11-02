@@ -17,7 +17,7 @@ export default function AboutWeather(props){
         </ul>
 
         <div className='row'>
-          <div className='col-6'>
+          <div className='col-sm-6'>
 
                 {/* Temperature and image */}
 
@@ -26,6 +26,8 @@ export default function AboutWeather(props){
                     <div>
                     <WeatherImg size={52} code = {props.data.icon} alt = {props.data.description}/>
                     </div>
+
+                    {/* Temperature unit */}
 
                     <div>
                         <WeatherTemperetureUnit celsius = {props.data.temperature} />
@@ -37,7 +39,7 @@ export default function AboutWeather(props){
 
             {/* Weather Forecast */}
 
-          <div className='col-6'>
+          <div className='col-sm-6'>
             <div className='WeatherForecast'>
               <ul>
                 <li>
