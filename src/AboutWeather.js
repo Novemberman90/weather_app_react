@@ -1,12 +1,13 @@
 import React from "react"
 import FormateDate from "./FormateDate";
 import WeatherImg from "./WeatherImg";
+import "./AboutWeather.css"
 import WeatherTemperetureUnit from "./WeatherTemperetureUnit"
 
 
 export default function AboutWeather(props){
     return (
-        <div className='AboutWeather'>
+        <div className='AboutWeather text-sm-start'>
         <h1>{props.data.city}</h1>
 
         <ul>
@@ -22,7 +23,7 @@ export default function AboutWeather(props){
                 {/* Temperature and image */}
 
             <div className='tempfix'>
-                <div className="d-flex">
+                <div className="d-flex d-sm-flex tempfix-gird">
                     <div>
                     <WeatherImg size={52} code = {props.data.icon} alt = {props.data.description}/>
                     </div>
@@ -37,10 +38,9 @@ export default function AboutWeather(props){
             </div>
           </div>
 
-            {/* Weather Forecast */}
+          {/* Weather description */}
 
-          <div className='col-sm-6'>
-            <div className='WeatherForecast'>
+          <div className='col-sm weather-description'>
               <ul>
                 <li>
                 Humidity: {props.data.humidity} %
@@ -49,7 +49,7 @@ export default function AboutWeather(props){
                   Wind speed: {Math.round(props.data.wind)} km/h
                 </li>
               </ul>
-            </div>
+            
             
           </div>
 

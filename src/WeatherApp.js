@@ -3,6 +3,7 @@ import "./WeatherApp.css"
 import axios from "axios";
 import AboutWeather from "./AboutWeather";
 import LoaderSpiner from "./LoaderSpiner";
+import SpinerWeatherApp from "./SpinerWeatherApp"
 import WeatherForecat from "./WeatherForecat"
 
 export default function WeatherApp (props){
@@ -48,20 +49,19 @@ export default function WeatherApp (props){
 
       <form className='SerchForm' onSubmit={handleSubmit}>
          <div className="row">
-            <div className='col-6'>
+            <div className='col-sm-6 form-control-input'>
               <input className='form-control' type="search" placeholder="Enter yor city" 
               autoFocus="on"
               onChange={cityChange} />
             </div>
             
-            <div className='col-3 SearchButton'>
-              <input className='btn btn-outline-dark' type="submit"  value="Search"/>
+            <div className='col-sm-2 Search-Button-form'>
+              <input className='btn btn-outline-dark SearchButton' type="submit"  value="Search"/>
             </div>
 
-          <div className='col-3 CurrentButton'>
-              <input className='btn btn-outline-dark' type="submit" name="current" value="Current"/>
-          </div>
-
+              <div className="col-sm spiner-input">
+             <SpinerWeatherApp />
+               </div>
           </div>
         </form>
 

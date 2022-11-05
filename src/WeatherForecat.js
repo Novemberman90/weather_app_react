@@ -36,11 +36,11 @@ export default function WeatherForecat (props) {
     if (loadedData) { 
         return (
         <div className="WeatherForecat">
-            <div className="row">
+            <div className="row text-sm-center p-2 mt-2">
                 {forecastData.map(function (dailyForecast, index) {
-                    if ( index < 5 ) {
+                    if ( index < 6 ) {
                         return (
-                            <div className="col-sm" key={index}>
+                            <div className="col-sm justify-content-sm-space-around forecastDay" key={index}>
                                 <WeatherForecatDay data={dailyForecast} />
                             </div>
                             

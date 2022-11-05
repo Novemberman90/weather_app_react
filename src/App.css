@@ -1,10 +1,19 @@
 
 .App {
   border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #780de5;
+  background: linear-gradient( 104.3deg, rgb(253, 243, 243) 10.9%, rgb(248, 231, 231) 27.8%, rgb(213, 154, 214));
   padding: 20px;
   margin: 40px auto;
   margin-bottom: 5px;
   max-width: 650px;
   font-family: Arial, Helvetica, sans-serif;
+  
+  
 }
 
+@media (max-width: 576px) {
+  .App {
+    margin: 0 auto;
+  } }

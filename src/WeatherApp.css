@@ -3,15 +3,20 @@
   }
   
   
-  form .SearchButton,
-  form .CurrentButton  {
+  form .SearchButton{
     width: 100px;
+    box-shadow: 0 0 10px #637ce1;
   }
-   
   
+  form .spiner-input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+  }
   .AboutWeather h1 {
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 700;
     line-height: 35px;
   }
   
@@ -26,6 +31,8 @@
     font-weight: 400;
     line-height: 20px;
   }
+
+ 
   
   .tempfix canvas {
     margin-right: 5px;
@@ -62,4 +69,26 @@
     position: relative;
     top: 39px;
   }
-  
+
+   @media (max-width: 576px) {
+    form .Search-Button-form {
+      width: 35%;
+      padding: 0;
+      text-align: center;
+    }
+    form .SearchButton{
+      width: auto;
+      box-shadow: 0 0 10px #637ce1;
+    }
+  form .form-control-input {
+    width: 65%;
+  }
+
+  form .spiner-input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -10px;
+  }
+
+  }

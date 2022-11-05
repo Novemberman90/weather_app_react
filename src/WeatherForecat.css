@@ -2,3 +2,21 @@
     opacity: 0.5;
     margin-left: 5px;
 }
+
+
+div .forecastDay {
+    border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        margin-right: 10px;
+        width: 35%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 5px;
+}
+
+div .forecastDay:hover {
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+    font-weight: 600;
+}

@@ -1,0 +1,16 @@
+
+
+div .weather-description {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    
+div .tempfix-gird {
+    display: flex;
+    justify-content: center;
+
+}
+
+}
