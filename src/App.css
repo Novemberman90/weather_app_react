@@ -15,5 +15,6 @@
 
 @media (max-width: 576px) {
   .App {
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
   } }
